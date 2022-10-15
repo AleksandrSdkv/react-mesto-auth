@@ -1,0 +1,5 @@
+.header__nav {
+    color: white;
+    display: flex;
+    align-items: baseline;
+}
