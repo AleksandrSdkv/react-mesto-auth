@@ -1,4 +1,3 @@
-import Header from './Header';
 import { useState } from 'react';
 
 function Login({ onLogin }) {
@@ -20,16 +19,10 @@ function Login({ onLogin }) {
         const { password, email } = stateInput;
         if (!password || !email) return;
 
-        onLogin(password, email); 
+        onLogin(password, email);
     }
     return (
         <>
-            <Header
-                classLink=""
-                nameLink='Регистрация'
-                link='/sign-up'
-            >
-            </Header>
             <form onSubmit={handleSubmit} className="form_type_register">
                 <h2 className="form__title_type_dark">Вход</h2>
                 <fieldset className="form__group">

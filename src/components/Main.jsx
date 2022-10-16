@@ -1,4 +1,3 @@
-
 import { useContext } from 'react';
 import overlayAvatar from '../image/VectorAvatar.svg';
 import Card from './Card';

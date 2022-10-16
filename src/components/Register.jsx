@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import Header from './Header';
+
 
 function Register({ onRegister }) {
     const [stateInput, setStateInput] = useState({
@@ -25,23 +25,10 @@ function Register({ onRegister }) {
         const { password, email } = stateInput;
         if (!password || !email) return;
 
-        onRegister(password, email).catch(err => {
-            console.log(err);
-            setStateInput({
-                password: '',
-                email: '',
-
-            });
-        });
+        onRegister(password, email)
     }
     return (
         <>
-            <Header
-                classLink=""
-                nameLink='Войти'
-                link='/sign-in'
-            >
-            </Header>
             <form onSubmit={handleSubmit} className="form_type_register" >
                 <h2 className="form__title_type_dark">Регистрация</h2>
                 <fieldset className="form__group">
@@ -51,7 +38,6 @@ function Register({ onRegister }) {
                     <span className="name-input-error form__error-message"></span>
                     <button className="form__bottom-submit_type_dark" type="submit">Зарегистрироваться</button>
                     <Link to="/sign-in" className="form__link-to-sing">Уже зарегистрированы? Войти</Link>
-
                 </fieldset>
             </form>
         </>

@@ -6,8 +6,8 @@
     outline: none;
     background-color: #fff;
     border-radius: 2px;
-    color: white;
-    margin: 10px 36px 37px;
+    color: 000;
+    margin: 186px 36px 37px;
     padding: 14px 0 18px 0;
     font-style: normal;
     font-weight: 400;
@@ -18,22 +18,22 @@
     cursor: pointer;
 }
 
-.form__bottom-submit:hover {
+.form__bottom-submit_type_dark:hover {
     opacity: .8;
 }
 
 @media screen and (max-width: 480px) {
-    .form__bottom-submit {
+    .form__bottom-submit_type_dark {
         width: 305px;
         height: 46px;
-        margin: 0 20px 20px 25px;
+        margin: 143px 20px 20px 25px;
         font-size: 14px;
         line-height: 17px;
     }
 }
 
 @media screen and (max-width: 380px) {
-    .form__bottom-submit {
+    .form__bottom-submit_type_dark {
         width: 238px;
     }
 }

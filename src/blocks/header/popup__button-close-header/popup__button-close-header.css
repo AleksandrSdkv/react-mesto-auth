@@ -1,0 +1,26 @@
+/* 
+.popup__button-close-header {
+    width: 32px;
+    height: 32px;
+    border: none;
+    background: none;
+    outline: none;
+    background-image: url(../../../image/CloseconSVG.svg);
+    padding: 0;
+    cursor: pointer;
+    order: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+}
+
+.popup__button-close-header:hover {
+    opacity: .6;
+}
+
+@media screen and (max-width: 565px) {
+    .popup__button-close-header {
+        width: 20px;
+        height: 20px;
+    }
+} */

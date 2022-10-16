@@ -1,4 +1,4 @@
-.header {
+.header_type_sign {
     width: 100%;
     margin: 45px 0 0 0;
     display: flex;
@@ -9,16 +9,16 @@
 }
 
 @media screen and (max-width: 1025px) {
-    .header {
+    .header_type_sign {
         margin: 38px 0 0 0;
     }
-    .header::after {
+    .header_type_sign::after {
         margin: 35.6px 0 0 0;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .header::after {
+    .header_type_sign::after {
         margin: 31.6px 0 0 0;
     }
     .header {
@@ -27,14 +27,15 @@
 }
 
 @media screen and (max-width: 520px) {
-    .header {
+    .header_type_sign {
         margin: 28px 0 0 0;
-        flex-direction: column-reverse;
+        align-items: baseline;
+        justify-content: space-between;
     }
 }
 
 @media screen and (max-width: 400px) {
-    .header {
+    .header_type_sign {
         margin: 0 0 0 0;
     }
 }
