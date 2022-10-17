@@ -132,13 +132,15 @@ function App() {
         }
     }, [loggedIn]);
 
-
-
     const handleLogin = (password, email) => {
         return AuthApi.login(password, email).then((data) => {
             if (!data.token) throw new Error('Нет jwt');
             localStorage.setItem('jwt', data.token);
             checkToken();
+
+        }).catch(err => {
+            console.log(`При регистрации произошла ошибка. ${err}`)
+            openInfoTooltipPopup(isInfoTooltiPopupOpen);
         });
     }
 
@@ -213,7 +215,6 @@ function App() {
                     onTrashClick={handleDeletedCardClick}
                     onCardDelete={handleDeleteCardId}
                 />
-
             </Switch>
 
             <Footer />
@@ -251,8 +252,6 @@ function App() {
                 onClose={closeAllPopups}
                 isSignIn={isSignUp}
             />
-
         </CurrentUserContext.Provider >)
 }
-
 export default App;

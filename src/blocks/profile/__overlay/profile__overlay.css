@@ -33,3 +33,19 @@
         top: 122px;
     }
 }
+
+@media screen and (max-width: 521px) {
+    .profile__overlay {
+        height: 127px;
+        width: 127px;
+        top: 270px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .profile__overlay {
+        height: 127px;
+        width: 127px;
+        top: 291px;
+    }
+}

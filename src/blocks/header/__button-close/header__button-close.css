@@ -1,5 +1,4 @@
-/* 
-.popup__button-close-header {
+.header__button-close {
     width: 32px;
     height: 32px;
     border: none;
@@ -14,13 +13,14 @@
     display: none;
 }
 
-.popup__button-close-header:hover {
+.header__button-close:hover {
     opacity: .6;
 }
 
-@media screen and (max-width: 565px) {
-    .popup__button-close-header {
+@media screen and (max-width: 520px) {
+    .header__button-close {
         width: 20px;
         height: 20px;
+        display: block;
     }
-} */
+}

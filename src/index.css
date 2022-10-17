@@ -13,6 +13,9 @@
 @import url(./blocks/header/__nav/header__nav.css);
 @import url(./blocks/header/_type/header_type_sign.css);
 @import url(./blocks/header/__nav/_type/header__nav_logo.css);
+@import url(./blocks/header/__button-close/header__button-close.css);
+@import url(./blocks/header/__nav/_hidden/header__nav_hidden.css);
+@import url(./blocks/header/__button-close/_type/header__button_type_menu.css);
 
 /* Блок profile */
 
