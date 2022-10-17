@@ -4,18 +4,18 @@ function Header(props) {
     const { loggedIn, userData, loggedOut } = props
     const [hiddenMenuDataUser, sethiddenMenuDataUser] = useState(false);
     const [buttonMenuDataUser, setButtonMenuDataUser] = useState("header__button-close");
-    const [isCangeMenu, setIsCangeMenu] = useState("header__nav_hidden");
+    const [isChangeMenu, setIsChangeMenu] = useState("header__nav_hidden");
 
     function changeButtonMenu() {
         sethiddenMenuDataUser(!hiddenMenuDataUser)
     }
     useEffect(() => {
         if (hiddenMenuDataUser) {
-            setIsCangeMenu('header__nav')
+            setIsChangeMenu('header__nav')
             setButtonMenuDataUser("header__button-close");
 
         } else {
-            setIsCangeMenu('header__nav_hidden')
+            setIsChangeMenu('header__nav_hidden')
             setButtonMenuDataUser("header__button_type_menu");
 
         }
@@ -30,10 +30,9 @@ function Header(props) {
                             <div className={"header__logo"}></div>
                             <button className={buttonMenuDataUser} onClick={changeButtonMenu} type="button" ></button>
                         </div>
-                        <div className={isCangeMenu}>
+                        <div className={isChangeMenu}>
                             <p className="header__nav-email">{userData.email}</p>
                             <button onClick={loggedOut} className="header__link_type_out" type="submit">Выйти</button>
-
                         </div>
                     </header >
                 </>
@@ -53,8 +52,6 @@ function Header(props) {
                     </header >
                 </Route>
             </Switch>
-
-
         </>
     )
 }

@@ -16,7 +16,6 @@ import { CurrentUserContext } from '../contexts/CurrentUserContext';
 import { Route, Switch, useHistory } from 'react-router-dom';
 import ProtectedRoute from './ProtectedRoute';
 
-
 function App() {
     const [isEditProfilePopupOpen, setIsEditProfilePopupOpen] = useState('');
     const [isAddPlacePopupOpen, setIsAddPlacePopupOpen] = useState('');
@@ -29,8 +28,6 @@ function App() {
     const [cards, setCards] = useState([]);
     const [deleteCard, setDeleteCard] = useState();
     const [isSignUp, setSignUp] = useState(false);
-
-
 
     function handleCardClick(card) {
         setisCardPopupOpen('popup_opened');
@@ -201,7 +198,6 @@ function App() {
                 <Route path="/sign-in">
                     <Login onLogin={handleLogin} />
                 </Route>
-
                 <ProtectedRoute
                     loggedIn={loggedIn}
                     path="/"

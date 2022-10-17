@@ -28,7 +28,7 @@
 
 @media screen and (max-width: 520px) {
     .header {
-        margin: 28px 0 0 0;
+        margin: 0 0 0 0;
         flex-direction: column-reverse;
         align-items: stretch;
     }
